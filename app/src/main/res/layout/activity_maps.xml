@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="garbo.com.rishy.garbo.MapsActivity">
+
+
+
+            <Button
+                android:id="@+id/newdust"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#80772B"
+                android:layout_gravity="end|center_vertical"
+                android:padding="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Add a new dustbin"
+                android:textColor="#f0e68c"/>
+
+            <!--android:layout_marginEnd="10dp"-->
+                <!--android:layout_marginStart="260dp"-->
+                <!--android:layout_marginTop="375dp"-->
+
+
+            <Button
+                android:id="@+id/nav"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="#80772B"
+                android:padding="5dp"
+                android:paddingEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="Find the nearest dustbin"
+                android:textColor="#f0e68c"/>
+
+
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_marginTop="550dp"-->
+
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.rishy.garbo.MapsActivity">
+
+            </fragment>
+
+
+        </FrameLayout>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/nav_header_drawer"
+            app:menu="@menu/activity_drawer_drawer" >
+
+        </android.support.design.widget.NavigationView>
+
+        <include
+            layout="@layout/app_bar_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v4.widget.DrawerLayout>
+
+</LinearLayout>
+

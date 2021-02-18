@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/results"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp">
+
+    <TextView
+        android:id="@+id/Confirmationreal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nearest Dustbin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <ImageView
+        android:id="@+id/dustbinpic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_dustpin"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/dustbinname2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text=""
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/realnav2"
+        style="@style/Theme.AppCompat.DayNight.Dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#80772B"
+        android:text="Navigate!"
+        android:textColor="#FFFFFF"/>
+</LinearLayout>

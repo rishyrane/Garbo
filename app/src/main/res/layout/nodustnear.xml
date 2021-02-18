@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nodustnear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp">
+
+    <TextView
+        android:id="@+id/Confirmation3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Dustbin Nearby"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:id="@+id/sure3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="There is no dustbin in the radius of 1km.You could still navigate to the closest dustbin or try adding one"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/navigate2"
+        style="@style/Theme.AppCompat.DayNight.Dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#80772B"
+        android:text="Navigate to the nearest dustbin"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/adddust2"
+        style="@style/Theme.AppCompat.DayNight.Dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0e68c"
+        android:text="Add a dustbin"
+        android:textColor="#000000"/>
+
+
+    <Button
+        android:id="@+id/goback2"
+        style="@style/Theme.AppCompat.DayNight.Dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#80772B"
+        android:text="Go Back"
+        android:textColor="#FFFFFF"/>
+</LinearLayout>

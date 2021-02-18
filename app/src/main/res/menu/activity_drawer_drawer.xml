@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+
+            <item
+                android:id="@+id/nav_newdate"
+                android:icon="@drawable/ic_action_clock"
+                android:title="Version Expires on:" />
+            <item
+                android:id="@+id/nav_date"
+                android:title="@string/next_update"/>
+            <item
+                android:id="@+id/nav_dev"
+                android:icon="@drawable/ic_action_name"
+                android:title="Contact Dev: rishyrane@live.com " />
+        <item
+            android:id="@+id/nav_devinfo"
+            android:title="rishyrane@live.com " />
+
+
+    </group>
+
+</menu>
